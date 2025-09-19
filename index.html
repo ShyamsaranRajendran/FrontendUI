@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Figma Landing Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Figma Landing Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>The best products start with Figma</h1>
+      <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
+      <a href="#features" class="btn-primary">Try For Free</a>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <img src="assets/icons/feature1.svg" alt="Icon">
+          <h3>OpenType features</h3>
+          <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
+        </div>
+        <div class="feature-item">
+          <img src="assets/icons/feature2.svg" alt="Icon">
+          <h3>Real time collaboration</h3>
+          <p>Collaborate with your team and clients in real time with Figma.</p>
+        </div>
+        <div class="feature-item">
+          <img src="assets/icons/feature3.svg" alt="Icon">
+          <h3>Extensive toolkit</h3>
+          <p>A wide range of tools for all your design and prototyping needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Modal Section -->
+    <section class="video-section">
+      <div class="video-container">
+        <img src="assets/images/video-thumbnail.jpg" alt="Video thumbnail">
+        <button class="play-btn" id="openModal">▶</button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+          title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Organize Section -->
+    <section class="organize">
+      <h2>Fastest way to organize</h2>
+      <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
+      <a href="#" class="btn-primary">Try For Free</a>
+      <img src="assets/images/organize.png" alt="Organize illustration">
+    </section>
+
+    <!-- Prototyping Section -->
+    <section class="prototyping">
+      <h2>Lightning fast prototyping</h2>
+      <p>Subscribe to our newsletter and stay updated.</p>
+      <a href="#" class="btn-secondary">Subscribe</a>
+      <img src="assets/images/prototype.png" alt="Prototyping illustration">
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+      <h2>Partners</h2>
+      <div class="partner-logos">
+        <img src="assets/images/partners/google.png" alt="Google">
+        <img src="assets/images/partners/amazon.png" alt="Amazon">
+        <img src="assets/images/partners/microsoft.png" alt="Microsoft">
+        <img src="assets/images/partners/uber.png" alt="Uber">
+        <img src="assets/images/partners/dropbox.png" alt="Dropbox">
+      </div>
+      <a href="#" class="btn-primary">Try For Free</a>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="carousel">
+        <!-- Slides -->
+        <div class="slide">
+          <img src="assets/images/testimonials/ibm.png" alt="IBM">
+          <p>"Most calendars are designed for teams. Slate is designed for freelancers."</p>
+          <span>- User 1</span>
+        </div>
+        <div class="slide">
+          <img src="assets/images/testimonials/google.png" alt="Google">
+          <p>"Figma makes collaboration fast and easy."</p>
+          <span>- User 2</span>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="prev">❮</button>
+      <button class="next">❯</button>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-cards">
+        <div class="card">
+          <h3>Free</h3>
+          <p>$0 / month</p>
+          <a href="#" class="btn-secondary">Order Now</a>
+        </div>
+        <div class="card featured">
+          <h3>Pro</h3>
+          <p>$10 / month</p>
+          <a href="#" class="btn-primary">Order Now</a>
+        </div>
+        <div class="card">
+          <h3>Business</h3>
+          <p>$99 / month</p>
+          <a href="#" class="btn-secondary">Order Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+        <p><strong>Email:</strong> info@figma.com</p>
+        <p><strong>Address:</strong> 123 Figma Street, Design City</p>
+        <div class="map">
+          <img src="assets/images/map.png" alt="Map">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Pages</a></li>
+        <li><a href="#">Template</a></li>
+        <li><a href="#">Home Task</a></li>
+      </ul>
+    </div>
+    <div class="footer-socials">
+      <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+    </div>
+    <p>&copy; 2025 Figma Landing. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

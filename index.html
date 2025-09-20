@@ -1,195 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Figma Landing Page</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Figma Landing - Mockup</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO / HEADER -->
+    <header class="hero" role="banner">
+      <div class="hero__nav">
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav__links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Product">Product</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- ================= HEADER ================= -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="assets/images/logo.png" alt="Figma Landing Logo" />
+          <img
+            src="assets/images/center.png"
+            alt="Figma Land Logo"
+            class="nav__logo"
+          />
+        </nav>
+        <div class="nav__social">
+          <a href="#" aria-label="Twitter">
+            <img src="assets/icons/twitter.svg" alt="Twitter Icon" />
+          </a>
+          <a href="#" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" alt="Facebook Icon" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn Icon" />
+          </a>
+        </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
-      </div>
-    </nav>
 
-    <div class="hero">
-      <h1>The best products start with Figma</h1>
-      <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
-      <a href="#features" class="btn-primary">Try For Free</a>
+      <div class="hero__content" role="region" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="hero__title">
+          The best products <br />
+          start with Figma
+        </h1>
+        <p class="hero__subtitle">
+          Most calendars are designed for teams. Slate is designed <br />for
+          freelancers
+        </p>
+        <div class="hero__cta">
+          <button id="ctaOpenModal" class="btn btn--primary">
+            Try For Free
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- END HERO / HEADER -->
+
+    <!-- ===============================
+    Feature sections would go here
+    =============================== -->
+
+    <div class="feature">
+      <h1>Features</h1>
+      <p>
+        Most calendars are designed for teams.<br />
+        Slate is designed for freelancers
+      </p>
+
+      <div class="feature__cards">
+        <div class="feature__card">
+          <img src="assets/icons/drawing.svg" alt="Icons 1" />
+          <h2>
+            OpenType features <br />
+            Variable fonts
+          </h2>
+          <p>
+            Slate helps you see how <br />
+            many more days you need <br />
+            to work to reach your <br />
+            financial goal.
+          </p>
+        </div>
+        <div class="feature__card">
+          <img src="assets/icons/draw.svg" alt="Icons 2" />
+          <h2>Design with real data</h2>
+          <p>
+            Slate helps you see how <br />
+            many more days you need <br />
+            to work to reach your <br />
+            financial goal.
+          </p>
+        </div>
+        <div class="feature__card">
+          <img src="assets/icons/brush.svg" alt="Icons 1" />
+          <h2>
+            Fastest way to <br />
+            take action
+          </h2>
+          <p>
+            Slate helps you see how <br />
+            many more days you need <br />
+            to work to reach your <br />
+            financial goal.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature__video">
+        <img
+          src="assets/images/screen.png"
+          alt="Video Thumbnail"
+          class="feature__thumbnail"
+        />
+        <img
+          src="assets/icons/play-button.svg"
+          alt="Play Video"
+          class="feature__play-btn"
+        />
+      </div>
     </div>
-  </header>
 
-  <!-- ================= MAIN ================= -->
-  <main>
-    <!-- Features Section -->
-    <section id="features" class="features">
-      <h2>Features</h2>
-      <div class="feature-list">
-        <div class="feature-item">
-          <img src="assets/icons/feature1.svg" alt="Icon">
-          <h3>OpenType features</h3>
-          <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
+    <section class="macbook">
+      <div class="macbook__content">
+        <div class="macbook__text">
+          <h1 class="macbook__title">
+            Fastest way to <br />
+            organize
+          </h1>
+          <p class="macbook__subtitle">
+            Most calendars are designed for teams. <br />
+            Slate is designed for freelancers
+          </p>
+          <div class="macbook__cta">
+            <button id="ctaOpenModal" class="btn btn--primary">
+              Try For Free
+            </button>
+          </div>
         </div>
-        <div class="feature-item">
-          <img src="assets/icons/feature2.svg" alt="Icon">
-          <h3>Real time collaboration</h3>
-          <p>Collaborate with your team and clients in real time with Figma.</p>
+
+        <div class="macbook__image-wrapper">
+          <img
+            src="assets/images/MacbookPro.png"
+            alt="MacBook Product Screenshot"
+            class="macbook__image"
+          />
         </div>
-        <div class="feature-item">
-          <img src="assets/icons/feature3.svg" alt="Icon">
-          <h3>Extensive toolkit</h3>
-          <p>A wide range of tools for all your design and prototyping needs.</p>
-        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <img
+        class="newsletter__image"
+        src="assets/images/undraw_newsletter_vovu.png"
+        alt="newsletter"
+      />
+
+      <div class="newsletter__content">
+        <h4>At your fingertips</h4>
+        <h1>
+          Lightning fast <br />
+          prototyping
+        </h1>
+        <p>Subscribe to our Newsletter</p>
+        <p>Available exclusively on Figmaland</p>
+        <form class="newsletter__form" action="#" method="post">
+          <input
+            type="email"
+            class="newsletter__input"
+            placeholder="Your email"
+            required
+          />
+          <button type="submit" class="btn btn--secondary">Subscribe</button>
+        </form>
       </div>
     </section>
 
-    <!-- Video Modal Section -->
-    <section class="video-section">
-      <div class="video-container">
-        <img src="assets/images/video-thumbnail.jpg" alt="Video thumbnail">
-        <button class="play-btn" id="openModal">▶</button>
-      </div>
-    </section>
+    <!-- --------------------------------------------------------------------------------------------------------------
+    Partners section would go here
+    -------------------------------------------------------------------------------------------------------------- -->
+    <section class="partners">
+      <h1>Partners</h1>
+      <p>
+        Most calendars are designed for teams. <br />
+        Slate is designed for freelancers
+      </p>
 
-    <!-- Modal -->
-    <div id="videoModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
-          title="YouTube video" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <!-- Organize Section -->
-    <section class="organize">
-      <h2>Fastest way to organize</h2>
-      <p>Most calendars are designed for teams. Slate is designed for freelancers.</p>
-      <a href="#" class="btn-primary">Try For Free</a>
-      <img src="assets/images/organize.png" alt="Organize illustration">
-    </section>
-
-    <!-- Prototyping Section -->
-    <section class="prototyping">
-      <h2>Lightning fast prototyping</h2>
-      <p>Subscribe to our newsletter and stay updated.</p>
-      <a href="#" class="btn-secondary">Subscribe</a>
-      <img src="assets/images/prototype.png" alt="Prototyping illustration">
-    </section>
-
-    <!-- Partners Section -->
-    <section id="partners" class="partners">
-      <h2>Partners</h2>
-      <div class="partner-logos">
-        <img src="assets/images/partners/google.png" alt="Google">
-        <img src="assets/images/partners/amazon.png" alt="Amazon">
-        <img src="assets/images/partners/microsoft.png" alt="Microsoft">
-        <img src="assets/images/partners/uber.png" alt="Uber">
-        <img src="assets/images/partners/dropbox.png" alt="Dropbox">
-      </div>
-      <a href="#" class="btn-primary">Try For Free</a>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-      <h2>Testimonials</h2>
-      <div class="carousel">
-        <!-- Slides -->
-        <div class="slide">
-          <img src="assets/images/testimonials/ibm.png" alt="IBM">
-          <p>"Most calendars are designed for teams. Slate is designed for freelancers."</p>
-          <span>- User 1</span>
+      <section class="clients">
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img
+            src="assets/icons/google.svg"
+            alt="Google"
+            class="client__logo"
+          />
         </div>
-        <div class="slide">
-          <img src="assets/images/testimonials/google.png" alt="Google">
-          <p>"Figma makes collaboration fast and easy."</p>
-          <span>- User 2</span>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img
+            src="assets/icons/amazon.svg"
+            alt="Amazon"
+            class="client__logo"
+          />
         </div>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img
+            src="assets/icons/microsoft.svg"
+            alt="Microsoft"
+            class="client__logo"
+          />
+        </div>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img src="assets/icons/uber.svg" alt="Uber" class="client__logo" />
+        </div>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img
+            src="assets/icons/dropbox.svg"
+            alt="Dropbox"
+            class="client__logo"
+          />
+        </div>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img
+            src="assets/icons/google.svg"
+            alt="Google"
+            class="client__logo"
+          />
+        </div>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img src="assets/icons/uber.svg" alt="Uber" class="client__logo" />
+        </div>
+        <div class="client">
+          <p class="client__name">Client Name</p>
+          <img
+            src="assets/icons/amazon.svg"
+            alt="Amazon"
+            class="client__logo"
+          />
+        </div>
+      </section>
+
+      <div class="macbook__cta">
+        <button id="ctaOpenModal" class="btn btn--primary">Try For Free</button>
       </div>
-      <!-- Carousel Controls -->
-      <button class="prev">❮</button>
-      <button class="next">❯</button>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-      <h2>Pricing</h2>
-      <div class="pricing-cards">
+    <!-- -------------------------------------------------------------------------------------------------------------------
+Testimonial Section
+-------------------------------------------------------------------------------------------------------------------  -->
+    <section class="testimonial">
+      <h1>Testimonials</h1>
+      <img src="assets/icons/ibm.svg" alt="IBM" />
+      <p>
+        Most calendars are designed for teams. Slate is designed for freelancers
+        <br />
+        who want a simple way to plan their schedule.
+      </p>
+
+      <div class="testimonial-profile">
+        <img src="assets/images/test-profile.png" alt="" />
+        <div class="test-content">
+          <h3>Sarah Steiner</h3>
+          <p>designation</p>
+        </div>
+      </div>
+
+      <!-- Pagination dots -->
+      <div class="testimonial-dots">
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------
+Pricing Section
+-------------------------------------------------------------------------------------------------------------------  -->
+    <section class="pricing">
+      <h1>Pricing</h1>
+      <p>
+        Most calendars are designed for teams. <br />
+        Slate is designed for freelancers
+      </p>
+
+      <div class="price-cards">
+        <!-- Basic -->
         <div class="card">
-          <h3>Free</h3>
-          <p>$0 / month</p>
-          <a href="#" class="btn-secondary">Order Now</a>
+          <h2>Basic</h2>
+          <p>hiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+          <p class="price">$10<span>/month</span></p>
+          <ul>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+          </ul>
+          <button class="btn">Order Now</button>
         </div>
-        <div class="card featured">
-          <h3>Pro</h3>
-          <p>$10 / month</p>
-          <a href="#" class="btn-primary">Order Now</a>
+
+        <!-- Pro (Active) -->
+        <div class="card active">
+          <h2>Pro</h2>
+          <p>hiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+
+          <p class="price">$25<span>/month</span></p>
+          <ul>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+          </ul>
+          <button class="btn btn--light">Order Now</button>
         </div>
+
+        <!-- Business -->
         <div class="card">
-          <h3>Business</h3>
-          <p>$99 / month</p>
-          <a href="#" class="btn-secondary">Order Now</a>
+          <h2>Business</h2>
+          <p>hiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+
+          <p class="price">$50<span>/month</span></p>
+          <ul>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+            <li>Pricing Feature</li>
+          </ul>
+          <button class="btn">Order Now</button>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Message"></textarea>
-        <button type="submit" class="btn-primary">Send</button>
-      </form>
-      <div class="contact-info">
-        <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-        <p><strong>Email:</strong> info@figma.com</p>
-        <p><strong>Address:</strong> 123 Figma Street, Design City</p>
-        <div class="map">
-          <img src="assets/images/map.png" alt="Map">
+    <!-- Footer -->
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div>© <span id="year"></span> Figma Land</div>
+          <div class="footer__social">
+            <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
+            <a href="#"
+              ><img src="assets/icons/facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/icons/linkedin.svg" alt="LinkedIn"
+            /></a>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </footer> -->
 
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">Pages</a></li>
-        <li><a href="#">Template</a></li>
-        <li><a href="#">Home Task</a></li>
-      </ul>
-    </div>
-    <div class="footer-socials">
-      <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter"></a>
-      <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
-      <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
-    </div>
-    <p>&copy; 2025 Figma Landing. All rights reserved.</p>
-  </footer>
-
-  <!-- JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

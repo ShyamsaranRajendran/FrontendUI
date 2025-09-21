@@ -569,6 +569,7 @@ Pricing Section
   justify-content: center;
   align-items: flex-start;
   gap: 60px;
+  margin-bottom: 60px;
 }
 
 /* Individual card */
@@ -684,4 +685,283 @@ Pricing Section
 .pricing-card.active .pricing-card__features li,
 .pricing-card.active .pricing-card__value {
   color: #f0f0f0;
+}
+
+/*  <!-- -------------------------------------------------------------------------------------------------------------------
+Contact Section
+-------------------------------------------------------------------------------------------------------------------  -->
+   */
+
+   /* ===== Contact Section ===== */
+.contact-section {
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header */
+.contact-header h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* ===== Layout Grid ===== */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: stretch; /* ensures equal height */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== Form ===== */
+.contact-form {
+  padding: 50px 70px;
+  border: 1px solid rgb(245, 245, 245);
+  border-radius: 20px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* stretches content */
+}
+
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 24px;
+  background: #f1f1f1;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+/* Placeholder color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+
+.contact-form textarea {
+  min-height: 175px;
+  resize: vertical;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* match input rounded corners */
+}
+
+.contact-form button {
+  width: 30%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #1976d2;
+}
+
+/* ===== Info Section ===== */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  height: 100%; /* full height matching form */
+  font-size: 18px; /* larger font size */
+}
+
+.info-items {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+}
+
+.info img {
+  width: 24px;
+  height: 24px;
+}
+
+.info p {
+  font-size: 18px; /* increased */
+  margin-top: 8px;
+  width: 100%;
+}
+
+/* Map */
+.map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+  padding-left: 150px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 325px;
+  border: 0;
+}
+
+/* Social Icons */
+.socials {
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 100px;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: filter 0.3s ease;
+}
+
+.socials a img {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) saturate(100%) invert(35%) sepia(89%) saturate(734%) hue-rotate(182deg) brightness(91%) contrast(95%);
+  transition: filter 0.3s ease;
+}
+
+.socials a:hover img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(89%) saturate(734%) hue-rotate(182deg) brightness(110%) contrast(95%);
+}
+
+
+/*  <!-- -------------------------------------------------------------------------------------------------------------------
+Footer Section
+-------------------------------------------------------------------------------------------------------------------  -->
+   */
+.footer {
+  background-color: #1d2741;
+  color: #fff;
+  padding: 60px 80px; /* left and right padding */
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 120px;
+}
+
+/* Footer Columns */
+.footer-col h4 {
+  font-size: 30px; /* increased from 16px */
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-weight: 300;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 20px; /* increased from 8px */
+}
+
+.footer-col ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 18px; /* increased from 14px */
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #2196f3;
+}
+
+/* Contact Column */
+.contact-col p {
+  display: flex;
+  align-items: center;
+  font-size: 18px; /* increased from 14px */
+  margin-bottom: 10px; /* slightly increased */
+  color: #ddd;
+}
+
+.contact-col img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+/* Map icon (first p img inside .contact-col) */
+.contact-col p:nth-of-type(1) img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Phone icon (second p img inside .contact-col) */
+.contact-col p:nth-of-type(2) img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Social Icons */
+.footer-socials {
+  margin-top: 12px; /* slightly increased */
+}
+
+.footer-socials a {
+  display: inline-block;
+  margin-right: 12px; /* slightly increased */
+  font-size: 20px; /* increased from 18px */
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer-socials img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-socials a:hover {
+  color: #2196f3;
 }

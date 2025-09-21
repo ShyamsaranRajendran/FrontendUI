@@ -286,58 +286,83 @@ Testimonial Section
 Pricing Section
 -------------------------------------------------------------------------------------------------------------------  -->
     <section class="pricing">
-      <h1>Pricing</h1>
-      <p>
+      <h1 class="pricing__title">Pricing</h1>
+      <p class="pricing__subtitle">
         Most calendars are designed for teams. <br />
         Slate is designed for freelancers
       </p>
 
-      <div class="price-cards">
-        <!-- Basic -->
-        <div class="card">
-          <h2>Basic</h2>
-          <p>hiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
-          <p class="price">$10<span>/month</span></p>
-          <ul>
+      <div class="pricing__cards">
+        <!-- Free -->
+        <div class="pricing-card">
+          <h2 class="pricing-card__title">Free</h2>
+          <p class="pricing-card__desc">
+            Organize across all <br />
+            apps by hand
+          </p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">0</span>
+            <div class="pricing-card__value">
+              <span>$</span>
+              <p>Per Month</p>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
           </ul>
-          <button class="btn">Order Now</button>
+          <button class="pricing-btn">Order Now</button>
         </div>
 
         <!-- Pro (Active) -->
-        <div class="card active">
-          <h2>Pro</h2>
-          <p>hiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
-
-          <p class="price">$25<span>/month</span></p>
-          <ul>
+        <div class="pricing-card active">
+          <h2 class="pricing-card__title">Standard</h2>
+          <p class="pricing-card__desc">
+            Organize across all <br />
+            apps by hand
+          </p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">10</span>
+            <div class="pricing-card__value">
+              <span>$</span>
+              <p>Per Month</p>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
           </ul>
-          <button class="btn btn--light">Order Now</button>
+          <button class="pricing-btn pricing-btn--light">Order Now</button>
         </div>
 
         <!-- Business -->
-        <div class="card">
-          <h2>Business</h2>
-          <p>hiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
-
-          <p class="price">$50<span>/month</span></p>
-          <ul>
+        <div class="pricing-card">
+          <h2 class="pricing-card__title">Business</h2>
+          <p class="pricing-card__desc">
+            Organize across all <br />
+            apps by hand
+          </p>
+          <div class="pricing-card__price">
+            <span class="pricing-card__amount">99</span>
+            <div class="pricing-card__value">
+              <span>$</span>
+              <p>Per Month</p>
+            </div>
+          </div>
+          <ul class="pricing-card__features">
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
             <li>Pricing Feature</li>
           </ul>
-          <button class="btn">Order Now</button>
+          <button class="pricing-btn">Order Now</button>
         </div>
       </div>
     </section>

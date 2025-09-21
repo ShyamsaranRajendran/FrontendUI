@@ -73,7 +73,7 @@ nav {
 }
 
 .nav__logo {
-  width: 140px;
+  width: 250px;
   height: auto;
 }
 
@@ -542,99 +542,146 @@ Testimonial Section
 Pricing Section
 -------------------------------------------------------------------------------------------------------------------  -->
    */
+
+   /* Section wrapper */
 .pricing {
   text-align: center;
   padding: 80px 5%;
-  background: #f9f9f9;
+  background: #252b42;
+  color: #fff;
 }
 
-.pricing h1 {
-  font-size: 36px;
+.pricing__title {
+  font-size: 60px;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 
-.pricing p {
-  color: #555;
-  margin-bottom: 50px;
+.pricing__subtitle {
+  font-size: 24px;
+  margin-bottom: 120px;
+  color: #fff;
 }
 
-.price-cards {
+/* Cards container */
+.pricing__cards {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 60px;
 }
 
-.card {
-  width: 280px;
-  min-height: 360px;
+/* Individual card */
+.pricing-card {
+  width: 320px;
+  min-height: 400px;
   padding: 30px 20px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  color: #000;
 }
 
-.card h2 {
-  font-size: 22px;
+.pricing-card__title {
+  font-size: 28px;
   margin-bottom: 15px;
 }
 
-.card .price {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.card .price span {
+.pricing-card__desc {
   font-size: 16px;
-  color: #777;
+  color: #444;
+  margin-bottom: 40px;
 }
 
-.card ul {
+.pricing-card__price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* align to the top */
+  gap: 6px;  
+  margin-bottom: 60px;                /* spacing between number and value */
+}
+
+.pricing-card__amount {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;            /* prevent extra spacing */
+}
+
+.pricing-card__value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;          /* tighter vertical spacing */
+  font-size: 14px;
+  color: #666;
+}
+
+.pricing-card__value span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;        /* small space above "Per Month" */
+}
+
+.pricing-card__value p {
+  margin: 0;
+  font-size: 12px;
+}
+
+
+/* Features */
+.pricing-card__features {
   list-style: none;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 25px 0;
 }
 
-.card ul li {
-  margin-bottom: 10px;
+.pricing-card__features li {
+  margin-bottom: 40px;
   color: #444;
 }
 
-.card button {
-  padding: 12px 20px;
+/* Buttons */
+.pricing-btn {
+  padding: 14px 25px;
   border: none;
-  border-radius: 8px;
+  border-radius: 25px;
   background: var(--accent, #2ea3ff);
   color: #fff;
   font-weight: 600;
+  font-size: 20px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.card button:hover {
+.pricing-btn:hover {
   background: var(--accent-dark, #1e88ff);
 }
 
-/* Active Card */
-.card.active {
-  background: var(--accent-dark, #1e88ff);
-  color: #fff;
-  transform: translateY(-20px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.card.active .price span,
-.card.active ul li {
-  color: #f0f0f0;
-}
-
-.card.active button {
+.pricing-btn--light {
   background: #fff;
   color: var(--accent-dark, #1e88ff);
 }
 
-.card.active button:hover {
+.pricing-btn--light:hover {
   background: #f0f0f0;
+}
+
+/* Active card */
+.pricing-card.active {
+  background: var(--accent-dark, #1e88ff);
+  color: #fff;
+  transform: scale(1.1);          /* grows in all directions */
+  border: 2px solid #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.pricing-card.active .pricing-card__desc,
+.pricing-card.active .pricing-card__features li,
+.pricing-card.active .pricing-card__value {
+  color: #f0f0f0;
 }

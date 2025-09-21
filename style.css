@@ -743,7 +743,7 @@ Contact Section
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 40px;
   border: none;
   border-radius: 24px;
@@ -760,10 +760,10 @@ Contact Section
 
 .contact-form textarea {
   min-height: 175px;
-  resize: vertical;
+  resize: none;
   line-height: 1.5;
   border: 1px solid #ccc;
-  border-radius: 20px; /* match input rounded corners */
+  border-radius: 0;
 }
 
 .contact-form button {
@@ -916,7 +916,7 @@ Footer Section
   display: flex;
   align-items: center;
   font-size: 18px; /* increased from 14px */
-  margin-bottom: 10px; /* slightly increased */
+
   color: #ddd;
 }
 
@@ -964,4 +964,191 @@ Footer Section
 
 .footer-socials a:hover {
   color: #2196f3;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------
+Responsive style
+--------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ===============================
+   Responsive Styles
+   =============================== */
+
+/* Large screens (up to 1440px) */
+@media (max-width: 1440px) {
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+  }
+  .macbook__title {
+    font-size: 52px;
+  }
+  .macbook__subtitle {
+    font-size: 24px;
+  }
+  .pricing-card {
+    width: 280px;
+  }
+}
+
+/* Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    padding: 40px 5%;
+  }
+  .hero__nav {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .nav__links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feature h1,
+  .partners h1,
+  .testimonial h1,
+  .pricing__title,
+  .contact-header h2 {
+    font-size: 42px;
+  }
+  .feature p,
+  .partners p,
+  .contact-header p {
+    font-size: 20px;
+  }
+  .macbook__content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .newsletter {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .newsletter__content {
+    text-align: center;
+  }
+  .pricing__cards {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__subtitle {
+    font-size: 18px;
+  }
+  .hero__cta button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  .feature__cards {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .feature__card {
+    max-width: 100%;
+  }
+  .macbook__title {
+    font-size: 36px;
+  }
+  .macbook__subtitle {
+    font-size: 18px;
+  }
+  .newsletter__content h1 {
+    font-size: 32px;
+  }
+  .testimonial h1 {
+    font-size: 36px;
+  }
+  .testimonial p {
+    font-size: 20px;
+  }
+  .pricing__title {
+    font-size: 36px;
+  }
+  .pricing__subtitle {
+    font-size: 18px;
+  }
+  .pricing-card {
+    width: 100%;
+  }
+  .contact-form {
+    padding: 30px 20px;
+  }
+  .contact-form button {
+    width: 100%;
+  }
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+/* Small mobile (up to 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 20px;
+  }
+  .hero__title {
+    font-size: 28px;
+  }
+  .hero__subtitle {
+    font-size: 16px;
+  }
+  .hero__cta button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .feature h1,
+  .partners h1,
+  .pricing__title,
+  .contact-header h2 {
+    font-size: 28px;
+  }
+  .feature p,
+  .partners p,
+  .contact-header p {
+    font-size: 16px;
+  }
+  .newsletter__content h1 {
+    font-size: 24px;
+  }
+  .testimonial p {
+    font-size: 16px;
+  }
+  .pricing__subtitle {
+    font-size: 16px;
+  }
+  .footer-col h4 {
+    font-size: 20px;
+  }
+  .footer-col ul li a {
+    font-size: 14px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
 }
